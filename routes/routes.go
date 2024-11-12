@@ -7,7 +7,6 @@ import (
 )
 
 func EmployeeRoutes(router *gin.Engine) {
-	//  Simple group: v1
 	v1 := router.Group("/api/v1")
 	{
 		v1.GET("/employees", controllers.GetEmployees)
